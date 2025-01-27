@@ -1,36 +1,261 @@
-*{
-    margin-top: none;
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+    background-color: #f9f9f9;
+    background-image: url("images/tutorial\ towns\ background\ image.webp");
+    color: #333;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
-#p1 {
-    border-style:solid;
-    border-color: blue;
+header {
+    background-color: #2e7d32;
+    color: #fff;
+    padding: 1rem 0;
+    text-align: center;
+    width: 100%;
+}
+
+nav {
+    display: flex;
+    justify-content: center;
+    background-color: #2e7d32;
+    padding: 0.5rem 0;
+    width: 100%;
+}
+
+nav a {
+    color: #fff;
+    text-decoration: none;
+    margin: 0 1rem;
+    padding: 0.5rem 1rem;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+nav a:hover {
+    background-color: #1b5e20;
+}
+
+.main-content {
+    display: flex;
+    width: 100%;
+    max-width: 1300px;
+    margin: 2rem auto;
+}
+
+.container {
+    flex: 3;
+    padding: 1rem;
+    position: relative;
+    justify-content: space-between; 
+    height: 100%;     
+    background: #fff;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    align-items: center;
+}
+
+.ads {
+    flex: 1;
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.ad {
+    /*
+    width: 100%;
+    height: 200px;
+    background-color: #ccc;
+    */
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.ad p {
+    color: #555;
+    font-size: 0.9rem;
+}
+
+h1 {
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+.step {
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 2rem;
+    
+}
+
+.step-text {
+    flex: 1;
+    min-width: 300px;
+    text-align: center;
+}
+
+h4{
+    text-align: center;
+    font-size: 20px;
+    
+}
+
+.step-image {
+    border-style: solid;
+    border-color: black ;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    height: 200px;
+}
+
+.buttons{
+    display: flex;
+    justify-content: center;
+    gap: 1rem; 
+    margin-top: auto; 
+    padding-top: 1rem;
+    background-color: #fff; 
+    margin-bottom: 100px;
+    
+}
+
+.buttons a {
+    text-decoration: none;
+    padding: 10px 20px;
+    background-color: #4CAF50; 
+    color: white; 
+    border-radius: 5px;
+    font-size: 1rem;
+    transition: background-color 0.3s ease;
+}
+
+.buttons a:hover {
+    background-color: #1b5e20;
+}
+
+.step-image p {
+    color: #555;
+    font-size: 0.9rem;
+}
+
+footer {
+    text-align: center;
+    padding: 1rem;
+    background-color: #2e7d32;
+    color: #fff;
+    width: 100%;
+}
+
+/* Login/register page*/
+
+.box{
+    background-color:#2e7d32b5;
+    border-radius: 25px;
+    padding: 100px;
     margin-top: 100px;
-    margin-right: 200px ;
+    margin-bottom: 110px;
+    margin-left: 180px;
+    margin-right: 180px;
+    align-items: center;
+}
+
+
+input[type=text], select{
+    padding: 10px 10px;
+    border: grey;
+    border-radius: 4px;
+    font-weight: 100;
+    font-size: 15px;
+}
+
+input[type=password], select{
+    padding: 10px 10px;
+    border: grey;
+    border-radius: 4px;
+    font-weight: 100;
+    font-size: 15px;
+}
+
+input[type=submit] {
+    width: 100%;
+    background-color: #4CAF50;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 25px;
+    cursor: pointer;
+    font-weight: bold;
+    font-size: 15px;
+  }
+  
+input[type=submit]:hover {
+    background-color: #45a049;
+}
+
+.box-header{
+    color: white;
+    text-align: center;
+    font-size: 25px;
+}
+
+.forms{
+    color: white;
+}
+
+.box p{
+    color: rgb(255, 255, 255);
+    text-align: center;
+}
+
+.box div p a{
+    color:#5ce15e;
+    text-decoration: none;
+    padding-left: 10px;
     padding: 5px;
-    width: fit-content;
-    
+    border-radius: 10px;
 }
 
-#p2 {
-    border-style:solid;
-    border-color: green;
-    margin-top: 120px;
-    margin-left: 150px;
-    padding: 10px;
-    width: fit-content;
-    
-    
+.box div p a:hover {
+    transition: all ease, 0.5s;
+    text-decoration: underline;
+    color: white;
 }
 
-#p3 {
-    border-style:solid;
+.go-back{
+    display: flex;
+    justify-content: right;
     margin-top: 50px;
-    padding: 10px;
-    width: fit-content;
+    background-color:#2e7d3262;
+    padding-left: 40px;
+    padding-right: 40px;
+    border-radius: 35px;
+    
+}
 
-    margin-left: auto;
-    margin-right: auto;
-    
-    
+.go-back :hover{
+    background-color:#2e7d32;
+    padding-left: 40px;
+    padding-right: 40px;
+    border-radius: 35px;
+}
+
+.go-back a  {
+    text-decoration: none;
+    color: white;
+}
+
+.go-back a:hover{
+    background-color:#45a049;
+    text-decoration: underline;
 }
